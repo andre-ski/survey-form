@@ -1,0 +1,18 @@
+body{
+    background-image: linear-gradient(to right, rgba(234, 158, 16, 0.9),rgba(234, 158, 16, 0) ), url("/hive.jpg");
+    background-color: #F5870A;
+    color: white;
+}
+.survey-form{
+    background: rgba(234, 158, 16, 0.7);
+}
+.container{
+    width: 100%;
+    margin: 3.125rem auto 0 auto
+}
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+

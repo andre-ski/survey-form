@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Survey Form</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bee Survey</h1>
+            <p id="description">
+                Fill out this quick form bzzz to bzz assist the bzzz hive!
+            </p>
+        </header>
+        <form class="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Bee Identification Serial</label>
+                <input type="text" name="name" id="name" placeholder="Barry B. Benson">
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="buzzybeebenson@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="name" id="number-label">Age in Bee Years</label>
+                <input type="number" name="number" id="number" min=0 max=10 placeholder="01234556789">
+            </div>
+            <div class="form-group">
+                <label for="role">What best describes your current role in society?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="1">Worker Bee</option>
+                    <option value="2">Lazy Bee</option>
+                    <option value="3">Queen Bee</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Do you like honey?</label>
+                <input type="radio" name="question" id="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="question" id="obviously">
+                <label for="obviously">Obviously</label>
+                <input type="radio" name="question" id="bzzz">
+                <label for="bzzz">Bzzz</label>
+            </div>
+            <div class="form-group">
+                <label>What colour is your furr?</label>
+                <input type="checkbox" name="checkbox" id="black-furr" value="black">
+                <label for="black-furr">Black</label>
+                <input type="checkbox" name="checkbox" id="yellow-furr" value="yellow">
+                <label for="yellow-furr">Yellow</label>
+                <input type="checkbox" name="checkbox" id="bzzz-furr" value="undefined">
+                <label for="bzzz-fur">Bzzz Bzzz</label>
+            </div>
+            <div class="form-group">
+                <label>Anything else to bzzz?</label>
+                <textarea name="disclosure" id="disclosure" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
