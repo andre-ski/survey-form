@@ -1,4 +1,1 @@
-<?php
-    $page = file_get_contents('public/index.html');
-    echo $page;
-?>
+<?php include_once("public/index.html"); ?>
