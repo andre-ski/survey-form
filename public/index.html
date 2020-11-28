@@ -5,31 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">Survey Form</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Bee Survey</h1>
             <p id="description">
-                Fill out this quick form bzzz to bzz assist the bzzz hive!
+                Fill out this quick form to assist the hive!
             </p>
         </header>
         <form class="survey-form">
             <div class="form-group">
                 <label for="name" id="name-label">Bee Identification Serial</label>
-                <input type="text" name="name" id="name" placeholder="Barry B. Benson">
+                <input type="text" name="name" class="form-input" id="name" placeholder="Barry B. Benson">
             </div>
             <div class="form-group">
                 <label for="email" id="email-label">Email</label>
-                <input type="email" name="email" id="email" placeholder="buzzybeebenson@gmail.com">
+                <input type="email" name="email" class="form-input" id="email" placeholder="buzzybeebenson@gmail.com">
             </div>
             <div class="form-group">
                 <label for="name" id="number-label">Age in Bee Years</label>
-                <input type="number" name="number" id="number" min=0 max=10 placeholder="01234556789">
+                <input type="number" name="number" class="form-input" id="number" min=0 max=9 placeholder="2">
             </div>
             <div class="form-group">
                 <label for="role">What best describes your current role in society?</label>
-                <select name="dropdown" id="dropdown">
+                <select name="dropdown" id="dropdown" class="select-bee">
                     <option value="1">Worker Bee</option>
                     <option value="2">Lazy Bee</option>
                     <option value="3">Queen Bee</option>
@@ -37,27 +39,27 @@
             </div>
             <div class="form-group">
                 <label>Do you like honey?</label>
-                <input type="radio" name="question" id="yes">
-                <label for="yes">Yes</label>
-                <input type="radio" name="question" id="obviously">
-                <label for="obviously">Obviously</label>
-                <input type="radio" name="question" id="bzzz">
-                <label for="bzzz">Bzzz</label>
+                
+                <label for="yes"><input type="radio" name="question" id="yes">Yes</label>
+                <label for="obviously"> <input type="radio" name="question" id="obviously">Yes</label>
+                <label for="bzzz"><input type="radio" name="question" id="bzzz">Bzzz</label>
             </div>
             <div class="form-group">
                 <label>What colour is your furr?</label>
-                <input type="checkbox" name="checkbox" id="black-furr" value="black">
-                <label for="black-furr">Black</label>
-                <input type="checkbox" name="checkbox" id="yellow-furr" value="yellow">
-                <label for="yellow-furr">Yellow</label>
-                <input type="checkbox" name="checkbox" id="bzzz-furr" value="undefined">
-                <label for="bzzz-fur">Bzzz Bzzz</label>
+               
+                <label for="black-furr"> <input type="checkbox" name="checkbox" id="black-furr" value="black">Black</label>
+                
+                <label for="yellow-furr"><input type="checkbox" name="checkbox" id="yellow-furr" value="yellow">Yellow</label>
+             
+                <label for="bzzz-fur">   <input type="checkbox" name="checkbox" id="bzzz-furr" value="undefined">Bzzz Bzzz</label>
             </div>
             <div class="form-group">
                 <label>Anything else to bzzz?</label>
                 <textarea name="disclosure" id="disclosure" cols="30" rows="10"></textarea>
             </div>
-            <button type="submit" id="submit">Submit</button>
+            <div class="button-container">
+                <button type="submit" id="submit">Submit</button>
+            </div>
         </form>
     </div>
 </body>

@@ -1,4 +1,4 @@
 <?php
-    $page = file_get_contents('index.html');
+    $page = file_get_contents('public/index.html');
     echo $page;
 ?>
